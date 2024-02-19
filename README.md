@@ -5,21 +5,25 @@ This is just a ERC-20 token contract to test with the Cartesi Portal
 ## Deploy the Smart Contract
 
 Install all the dependencies:
+
 ```shell
 yarn
 ```
 
 Compile:
+
 ```shell
 yarn hardhat compile
 ```
 
 Deploy the contract:
+
 ```shell
-yarn hardhat run scripts/GLDToken_deploy.js
+yarn hardhat run --network localhost scripts/GLDToken_deploy.js
 ```
 
 The output will be something like this:
+
 ```shell
 yarn run v1.22.19
 $ /home/oshiro/calindra/learn-erc-20/node_modules/.bin/hardhat run scripts/GLDToken_deploy.js
@@ -33,6 +37,7 @@ The token address is 0x9E545E3C0baAB3E08CdfD552C960A1050f373042
 ## Cartesi Portal
 
 Today, 17 nov 2022, checkout the rollups-examples at: 
+
 ```shell
 git clone git@github.com:Calindra/rollups-examples.git
 cd ./rollups-examples
@@ -44,12 +49,13 @@ yarn
 Do the commom setup procedures documented at Cartesi docs.
 
 Run the deposit command with the token address deployed as argument.
-```shell
 
-yarn start erc20 deposit --erc20 0x9E545E3C0baAB3E08CdfD552C960A1050f373042 --amount 1234
+```shell
+yarn start erc20 deposit --erc20 0xc6e7DF5E7b4f2A278906862b61205850344D4e7d --amount 1234
 ```
 
 Output:
+
 ```shell
 yarn run v1.22.19
 $ ts-node src/index.ts erc20 deposit --erc20 0x9E545E3C0baAB3E08CdfD552C960A1050f373042 --amount 1234
