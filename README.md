@@ -34,6 +34,12 @@ Done in 1.51s.
 
 The token address is 0x9E545E3C0baAB3E08CdfD552C960A1050f373042
 
+## NFT - ERC-721
+
+```shell
+yarn hardhat run --network localhost scripts/NonFunToken_deploy.js
+```
+
 ## Cartesi Portal
 
 Today, 17 nov 2022, checkout the rollups-examples at: 
